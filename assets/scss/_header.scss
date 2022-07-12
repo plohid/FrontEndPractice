@@ -103,7 +103,7 @@ h6 {
     input[type="text"] {
 
     
-        width: calc(100% - 10px);
+        width: calc(100% - 30px);
         height: 40px;
         background-color: transparent;
         color: #fff;
@@ -136,20 +136,20 @@ h6 {
         color: $theme_white;
         border: none;
         outline: none;
-        .close{
-            right: 50px;
-        }
-
         &:hover {
             color: $theme_color;
         }
        
     }
+    button .close{
+        right: 50px;
+    }
 
 }
 
-.header_top_active{
+.header_top_search_active{
     top:auto; 
+    width: 100%;
 }
 .header_menu {
     display: flex;
@@ -407,11 +407,66 @@ h6 {
     
 
     .header_top__search {
-
-       
-        button {
-            display: none;
+        .header_top__search {
+            position: relative;
+            left: 0;
+            height: 70px;
+            background-color: #040b29;
+            z-index: 1;
+            padding: 0 15px;
+            transition: top 0.5s ease;
+            border-radius: 5px;
+            width: 30%;
+            
+        
+            input[type="text"] {
+        
+            
+                width: calc(100% - 30px);
+                height: 40px;
+                background-color: transparent;
+                color: #fff;
+                font-size: 14px;
+                border-radius: 99px;
+                border: none;
+                padding: 0 45px 0 20px;
+                font-weight: 400;
+                border: 1px solid rgba(255, 255, 255, .1);
+                outline: none; 
+        
+               
+                
+        
+        
+                &::placeholder {
+                    color: $theme_white;
+                }
+        
+            }
+        
+            button {
+                position: absolute;
+                content: "";
+                right: 30px;
+                top: 15px;
+                height: 40px;
+                width: 0;
+                background-color: transparent;
+                color: $theme_white;
+                border: none;
+                outline: none;
+                &:hover {
+                    color: $theme_color;
+                }
+               
+            }
+            button .close{
+                right: -50px;
+            }
+        
         }
+        
+       
     }
 
     .header_actions {
@@ -558,19 +613,18 @@ h6 {
     .header{
         .header_content{
 
-            .header_top__search {
-    
+            // .header_top__search {
 
-                button {
-                           .close{
-                        right: 50px;
-                    }
+            //     button {
+            //                .close{
+            //             right: 50px;
+            //         }
             
                     
                    
-                }
+            //     }
             
-            }
+            // }
             
         }
     }

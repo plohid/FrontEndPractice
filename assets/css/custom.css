@@ -83,7 +83,7 @@ h6 {
   width: 30%;
 }
 .header_top__search input[type=text] {
-  width: calc(100% - 10px);
+  width: calc(100% - 30px);
   height: 40px;
   background-color: transparent;
   color: #fff;
@@ -110,15 +110,16 @@ h6 {
   border: none;
   outline: none;
 }
-.header_top__search button .close {
-  right: 50px;
-}
 .header_top__search button:hover {
   color: #f3a735;
 }
+.header_top__search button .close {
+  right: 50px;
+}
 
-.header_top_active {
+.header_top_search_active {
   top: auto;
+  width: 100%;
 }
 
 .header_menu {
@@ -301,8 +302,50 @@ h6 {
   .header__logo .logo_link img {
     overflow: hidden;
   }
-  .header_top__search button {
-    display: none;
+  .header_top__search .header_top__search {
+    position: relative;
+    left: 0;
+    height: 70px;
+    background-color: #040b29;
+    z-index: 1;
+    padding: 0 15px;
+    transition: top 0.5s ease;
+    border-radius: 5px;
+    width: 30%;
+  }
+  .header_top__search .header_top__search input[type=text] {
+    width: calc(100% - 30px);
+    height: 40px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 99px;
+    border: none;
+    padding: 0 45px 0 20px;
+    font-weight: 400;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    outline: none;
+  }
+  .header_top__search .header_top__search input[type=text]::placeholder {
+    color: #fff;
+  }
+  .header_top__search .header_top__search button {
+    position: absolute;
+    content: "";
+    right: 30px;
+    top: 15px;
+    height: 40px;
+    width: 0;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+  .header_top__search .header_top__search button:hover {
+    color: #f3a735;
+  }
+  .header_top__search .header_top__search button .close {
+    right: -50px;
   }
   .header_actions {
     justify-content: end;
@@ -403,9 +446,6 @@ h6 {
   }
 }
 @media (min-width: 1200px) {
-  .header .header_content .header_top__search button .close {
-    right: 50px;
-  }
   .header_menu {
     flex-direction: row;
     align-items: center;
