@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enftomark</title>
+    
+    <!-- bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- icofont -->
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    
+</head>
+<body class="main-body">
+
+<!-- preloader here -->
+
+
+<!-- header start  -->
+<header class="header">
+    <div class="header_content d-flex justify-content-center  align-items-center">
+        <div class="header__logo d-inline-flex align-items-center ">
+            <a class=" logo_link" href="index.html"><img class="logo_img img-fluid" src="assets/img/logo/logo-3.png"></a>
+        </div>
+        <form action="#" class="header_top__search d-inline-flex align-items-center">
+            <input type="text" placeholder="Search items, collections, and creators">
+            <button type="button"> <i class="icofont-search-2"></i> </button>
+            <button type="button" class="close"> <i class="icofont-close"></i> </button>
+        </form>
+        <div class="header_menu ms-auto">
+            <ul class="navber  ">
+                <li class="header_menu_item"><a class="header_menu-link" href="#" data-bs-toggle="dropdown_submenu"> Home</a></li>
+                <li class="header_menu_item"><a class="header_menu-link" href="#" data-bs-toggle="dropdown_submenu" > Explore </a></li>
+                <li class="header_menu_item"><a class="header_menu-link" href="#"> Activity </a></li>
+                <li class="header_menu_item"><a class="header_menu-link" href="#" data-bs-toggle="dropdown_submenu"> Blog </a></li>
+                <li class="header_menu_item"><a class="header_menu-link" href="#" data-bs-toggle="dropdown_submenu"> Pages </a></li>
+                <li class="header_menu_item"><a class="header_menu-link" href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M12,10a2,2,0,1,0,2,2A2,2,0,0,0,12,10ZM5,10a2,2,0,1,0,2,2A2,2,0,0,0,5,10Zm14,0a2,2,0,1,0,2,2A2,2,0,0,0,19,10Z" />
+                </svg> </a></li>
+            </ul>
+        </div>
+        <div class="header_actions">
+
+            <div class="header__action_search">
+                <button class="header__action-btn" type="button"><i class="icofont-search-1"></i></button>
+            </div>
+
+            <div class="header_profile">
+                <a class="header_p_link" href="#">
+                    <span > <i class="icofont-user"></i> </span>
+                    <span > Alex Joe </span>
+                </a>
+            </div>
+            <div class="walletBtn">
+                <a class="wallet_link" href="#">
+                    <span class="wallet_icon"> <i class="icofont-wallet" data-blast="color"></i> </span>
+                    <span class="wallet_text">234.98ETH</span>
+                </a>
+            </div>
+            <button class="responsive_toggle toggle_btn " id="toggle_btn" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+
+<!-- jquery cdn -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+
+<script>
+    "use strict";
+
+    const menuToggle = document.querySelector('.toggle_btn');
+    const headerMenu = document.querySelector('.header_menu');
+
+    
+    menuToggle.addEventListener('click', e=>{
+        
+        if(menuToggle.classList.contains('toggle_btn')){
+            if(menuToggle.classList.contains('active')){
+                menuToggle.classList.remove('active')
+                headerMenu.classList.remove('header_menu_active');
+
+
+               
+                
+            }
+            else{
+                
+                menuToggle.classList.add('active')
+                headerMenu.classList.add('header_menu_active');
+
+                console.log('active class removed')
+                
+            }          
+    }
+    
+   
+        
+    
+    })
+
+
+   
+    
+    
+</script>
+</body>
+</html>
+
+
+ <!-- https://preview.themeforest.net/item/enftomark-nft-marketplace-website-template/full_screen_preview/33455743?_ga=2.56061931.1980970296.1657219104-1823513200.1651178642&_gac=1.148457029.1653846652.CjwKCAjws8yUBhA1EiwAi_tpERRZqyIAHS96t2U1LIBymBk23aWdzpQwd8I1C86tztu2vTb6u1riwxoCpeIQAvD_BwE  -->
