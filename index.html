@@ -27,15 +27,31 @@
         <div class="header__logo d-inline-flex align-items-center ">
             <a class=" logo_link" href="index.html"><img class="logo_img img-fluid" src="assets/img/logo/logo-3.png"></a>
         </div>
-        <form action="#" class="header_top__search d-inline-flex align-items-center">
+        <form action="#" class="header_top__search d-inline-flex align-items-center" id="headerSearch">
             <input type="text" placeholder="Search items, collections, and creators">
             <button type="button"> <i class="icofont-search-2"></i> </button>
-            <button type="button" class="close"> <i class="icofont-close"></i> </button>
+            <button type="button" class="close" id="header_search_close_btn"> <i class="icofont-close"></i> </button>
         </form>
         <div class="header_menu ms-auto">
             <ul class="navber  ">
-                <li class="header_menu_item"><a class="header_menu-link" href="#" data-bs-toggle="dropdown_submenu"> Home</a></li>
-                <li class="header_menu_item"><a class="header_menu-link" href="#" data-bs-toggle="dropdown_submenu" > Explore </a></li>
+                <li class="header_menu_item">
+                    <a class="header_menu-link" href="#" data-bs-toggle="dropdown_submenu"> Home</a>
+                    <ul class="sub_menu">
+                        <li class="sub_menu_item"> <a   class="sub_menu_link active" href="#"> Home One </a>  </li>
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Home Two </a>  </li>
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Home Three </a>  </li>
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Home Four </a>  </li>
+                    </ul>
+                </li>
+                <li class="header_menu_item">
+                    <a class="header_menu-link" href="#" data-bs-toggle="dropdown_submenu"> Explore </a>
+                    <ul class="sub_menu">
+                        <li class="sub_menu_item"> <a   class="sub_menu_link active" href="#"> Explore NTF </a>  </li>
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Auction </a>  </li>
+                        
+                    </ul>
+                </li>
+
                 <li class="header_menu_item"><a class="header_menu-link" href="#"> Activity </a></li>
                 <li class="header_menu_item"><a class="header_menu-link" href="#" data-bs-toggle="dropdown_submenu"> Blog </a></li>
                 <li class="header_menu_item"><a class="header_menu-link" href="#" data-bs-toggle="dropdown_submenu"> Pages </a></li>
@@ -48,7 +64,7 @@
         <div class="header_actions">
 
             <div class="header__action_search">
-                <button class="header__action-btn" type="button"><i class="icofont-search-1"></i></button>
+                <button class="header__action-btn" type="button" id="search_icon_btn"><i class="icofont-search-1"></i></button>
             </div>
 
             <div class="header_profile">
@@ -75,7 +91,7 @@
 
 </header>
 
-<h1>hello world</h1>
+
 
 
 <!-- jquery cdn -->
@@ -86,39 +102,93 @@
 
 
 <script>
+
+
     "use strict";
 
-    const menuToggle = document.querySelector('.toggle_btn');
-    const headerMenu = document.querySelector('.header_menu');
+    //toggle menu js
+    (function () {
+        const menuToggle = document.querySelector('.toggle_btn');
+        const headerMenu = document.querySelector('.header_menu');
+        menuToggle.addEventListener('click', e=>{
+            
+            if(menuToggle.classList.contains('toggle_btn')){
+                if(menuToggle.classList.contains('active')){
+                    menuToggle.classList.remove('active')
+                    headerMenu.classList.remove('header_menu_active');
+                }
+                else{
+        
+                    menuToggle.classList.add('active')
+                    headerMenu.classList.add('header_menu_active');
+                    console.log('active class removed')
+                    
+                }          
+        }
+            
+        })
+
+    })();
 
     
-    menuToggle.addEventListener('click', e=>{
-        
-        if(menuToggle.classList.contains('toggle_btn')){
-            if(menuToggle.classList.contains('active')){
-                menuToggle.classList.remove('active')
-                headerMenu.classList.remove('header_menu_active');
+    //search icon btn
+    (function(){
+    const searchBtn = document.querySelector('#search_icon_btn');
+    const search_display = document.querySelector('#headerSearch'); 
+    const headerSearchCloseBtn = document.querySelector('#header_search_close_btn'); 
 
-               
+    searchBtn.addEventListener('click', e=>{
+        if(searchBtn){
+            if(!search_display.classList.add('header_top_search_active')){
+                search_display.classList.add('header_top_search_active');
+            }else{
+                search_display.classList.remove('header_top_search_active');
             }
-            else{
-                
-                menuToggle.classList.add('active')
-                headerMenu.classList.add('header_menu_active');
+        }
 
-                console.log('active class removed')
-                
-            }          
-    }
-    
+    })
+
+    headerSearchCloseBtn.addEventListener('click', e=>{
+        if(search_display.classList.contains('header_top_search_active')){
+            console.log('remove clicked')
+            search_display.classList.remove('header_top_search_active');        
+        }
+    })
+    })();
+
    
-        
-    
+    //sub menu drop down 
+
+    (function(){
+   
+    const dropdown_submenu = document.querySelector('[data-bs-toggle="dropdown_submenu"]')
+    const subMenu = document.querySelector('.sub_menu')
+
+    dropdown_submenu.addEventListener('click', e=>{
+        console.log(e.target)
+        subMenu.classList.toggle('show'); 
+        console.log('opacity 1 added ')
     })
 
 
+    // Close the dropdown menu if the user clicks outside of it
+    window.addEventListener('click', e=>{
+       if(!e.target.matches('[data-bs-toggle="dropdown_submenu"]')){
+        let dropDown = document.querySelector('.sub_menu');
+        var openDropDown = dropDown;
+        if(openDropDown.classList.contains('show')){
+                openDropDown.classList.remove('show'); 
+            }
+       }
+
+    })
+    })(); 
+
+
+
+ 
    
-    
+        
     
 </script>
 </body>
