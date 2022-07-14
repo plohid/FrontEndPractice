@@ -33,11 +33,11 @@
             <button type="button" class="close" id="header_search_close_btn"> <i class="icofont-close"></i> </button>
         </form>
         <div class="header_menu ms-auto">
-            <ul class="navber  ">
+            <ul class="navbar  ">
                 <li class="header_menu_item">
                     <a class="header_menu-link" href="#" data-bs-toggle="dropdown_submenu"> Home</a>
                     <ul class="sub_menu">
-                        <li class="sub_menu_item"> <a   class="sub_menu_link active" href="#"> Home One </a>  </li>
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Home One </a>  </li>
                         <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Home Two </a>  </li>
                         <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Home Three </a>  </li>
                         <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Home Four </a>  </li>
@@ -47,8 +47,7 @@
                     <a class="header_menu-link" href="#" data-bs-toggle="dropdown_submenu"> Explore </a>
                     <ul class="sub_menu">
                         <li class="sub_menu_item"> <a   class="sub_menu_link active" href="#"> Explore NTF </a>  </li>
-                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Auction </a>  </li>
-                        
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Auction </a>  </li>                     
                     </ul>
                 </li>
 
@@ -121,7 +120,7 @@
         
                     menuToggle.classList.add('active')
                     headerMenu.classList.add('header_menu_active');
-                    console.log('active class removed')
+                    console.log('active class added')
                     
                 }          
         }
@@ -161,14 +160,68 @@
 
     (function(){
    
-    const dropdown_submenu = document.querySelector('[data-bs-toggle="dropdown_submenu"]')
-    const subMenu = document.querySelector('.sub_menu')
+    // const dropdown_submenu = document.querySelector('[data-bs-toggle="dropdown_submenu"]')
+    // const subMenu = document.querySelector('.sub_menu')
 
-    dropdown_submenu.addEventListener('click', e=>{
-        console.log(e.target)
-        subMenu.classList.toggle('show'); 
-        console.log('opacity 1 added ')
-    })
+
+    // dropdown_submenu.addEventListener('click', e=>{
+
+     
+    //  dropdown_submenu.forEach( (button) => {
+    //     console.log(button)
+    //  })
+    //     forEach((dropdown_submenu)=>{
+    //     console.log(dropdown_submenu)
+    //  })
+
+    //     console.log(e)
+    //     subMenu.classList.toggle('show'); 
+    //     console.log('opacity 1 added ')
+    // })
+
+
+    //dropdown for 1st 
+    // const dropdown_submenu = document.querySelector('[data-bs-toggle="dropdown_submenu"]')
+    // const subMenu = document.querySelector('.sub_menu')
+
+    // dropdown_submenu.addEventListener('click', e=>{
+    //     console.log(e.target)
+    //     console.log('submenu click')
+    //     subMenu.classList.toggle('show'); 
+    //     console.log('opacity 1 added ')
+    // })
+
+    const headerMenuItem = document.querySelectorAll('[data-bs-toggle="dropdown_submenu"]');
+    // const headerMenuItem = document.querySelectorAll('.header_menu-link');
+
+        // console.log(headerItem);
+
+        headerMenuItem.forEach(dropdownLink =>{
+            
+            dropdownLink.addEventListener('click', e=>{
+               const dropdownMenu =document.querySelector('.sub_menu');
+            //    console.log(dropdownMenu);
+               
+            dropdownMenu.classList.toggle('show')
+            console.log(e.target)
+
+
+                
+            
+
+             
+            })
+        })
+        // dropdown.forEach(function(e){
+            
+        // })
+
+        // dropDown.forEach(function(dropDownItem){
+        //     dropDownItem.addEventListener('click', e=>{
+        //         console.log(e)
+        //     })
+        // } )
+
 
 
     // Close the dropdown menu if the user clicks outside of it
@@ -182,6 +235,8 @@
        }
 
     })
+
+
     })(); 
 
 

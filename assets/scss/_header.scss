@@ -163,7 +163,7 @@ h6 {
     transform: translate3d(281px, 0, 0);
     transition: transform .5s ease;
     border-left: 1px solid rgba(255, 255, 255, .1);
-    .navber {
+    .navbar {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -196,6 +196,7 @@ h6 {
                 font-weight: 500;
                 text-decoration: none;
                 position: relative;
+                z-index: 99;
 
                 &::before {
                     position: absolute;
@@ -264,6 +265,7 @@ h6 {
                 list-style: none;
                 transition: opacity 0.5s ease;
                 opacity: 0;
+                z-index: 9999;
                 li{
                     position: relative;
                     padding-block: 5px;
