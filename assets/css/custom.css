@@ -483,24 +483,24 @@ h6 {
     transform: translate3d(0, 0, 0);
     border: none;
     transition: transform 0s ease;
-    margin-right: 5%;
+    margin-right: 2%;
   }
-  .header_menu .navber {
+  .header_menu .navbar {
     flex-direction: row;
     align-items: center;
     width: auto;
   }
-  .header_menu .navber .header_menu_item {
+  .header_menu .navbar .header_menu_item {
     margin-left: 40px;
     list-style: none;
   }
-  .header_menu .navber .header_menu_item:last-child .header_menu-link::after, .header_menu .navber .header_menu_item:last-child .header_menu-link::before {
+  .header_menu .navbar .header_menu_item:last-child .header_menu-link::after, .header_menu .navbar .header_menu_item:last-child .header_menu-link::before {
     display: none;
   }
-  .header_menu .navber .header_menu_item:last-child .header_menu-link:hover svg {
+  .header_menu .navbar .header_menu_item:last-child .header_menu-link:hover svg {
     fill: #f3a735;
   }
-  .header_menu .navber .header_menu_item .header_menu-link {
+  .header_menu .navbar .header_menu_item .header_menu-link {
     font-family: "Barlow", sans-serif;
     font-size: 18px;
     color: #fff;
@@ -508,7 +508,7 @@ h6 {
     text-decoration: none;
     position: relative;
   }
-  .header_menu .navber .header_menu_item .header_menu-link::before {
+  .header_menu .navbar .header_menu_item .header_menu-link::before {
     position: absolute;
     content: "";
     width: 0;
@@ -517,10 +517,10 @@ h6 {
     bottom: -5px;
     transition: all 0.3s ease;
   }
-  .header_menu .navber .header_menu_item .header_menu-link:hover::before {
+  .header_menu .navbar .header_menu_item .header_menu-link:hover::before {
     width: 100%;
   }
-  .header_menu .navber .header_menu_item .header_menu-link[data-bs-toggle=dropdown_submenu]::after {
+  .header_menu .navbar .header_menu_item .header_menu-link[data-bs-toggle=dropdown_submenu]::after {
     position: absolute;
     content: "\ea99";
     font-family: "icoFont";
@@ -528,12 +528,12 @@ h6 {
     top: 60%;
     right: -18px;
   }
-  .header_menu .navber .header_menu_item .header_menu-link[data-bs-toggle=dropdown_submenu]:hover::after {
+  .header_menu .navbar .header_menu_item .header_menu-link[data-bs-toggle=dropdown_submenu]:hover::after {
     transform: translateY(-60%) rotate(180deg);
     position: absolute;
     transition: all 0.3s ease;
   }
-  .header_menu .navber .header_menu_item .header_menu-link svg {
+  .header_menu .navbar .header_menu_item .header_menu-link svg {
     fill: #fff;
     width: 1.7rem;
   }
