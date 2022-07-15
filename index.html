@@ -52,12 +52,39 @@
                 </li>
 
                 <li class="header_menu_item"><a class="header_menu-link" href="#"> Activity </a></li>
-                <li class="header_menu_item"><a class="header_menu-link" href="#" data-bs-toggle="dropdown_submenu"> Blog </a></li>
-                <li class="header_menu_item"><a class="header_menu-link" href="#" data-bs-toggle="dropdown_submenu"> Pages </a></li>
-                <li class="header_menu_item"><a class="header_menu-link" href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <li class="header_menu_item"><a class="header_menu-link" href="#" data-bs-toggle="dropdown_submenu"> Blog </a>
+                    <ul class="sub_menu">
+                        <li class="sub_menu_item"> <a   class="sub_menu_link active" href="#"> Blog One </a>  </li>
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Blog Two </a>  </li>                     
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Blog Three </a>  </li>                     
+                    </ul>
+                </li>
+                    
+                <li class="header_menu_item"><a class="header_menu-link" href="#" data-bs-toggle="dropdown_submenu"> Pages </a> 
+                    <ul class="sub_menu">
+                        <li class="sub_menu_item"> <a   class="sub_menu_link active" href="#"> NTF Details  </a>  </li>
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> All Author </a>  </li>                     
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> All Author 2 </a>  </li>                     
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Author Profile </a>  </li>                     
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Wallet Connect </a>  </li>                     
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> 404 </a>  </li>                     
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Forgot Password </a>  </li>                     
+                    </ul>
+                </li>
+                <li class="header_menu_item"><a class="header_menu-link" href="#" data-bs-toggle="dropdown_submenu"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path
                         d="M12,10a2,2,0,1,0,2,2A2,2,0,0,0,12,10ZM5,10a2,2,0,1,0,2,2A2,2,0,0,0,5,10Zm14,0a2,2,0,1,0,2,2A2,2,0,0,0,19,10Z" />
-                </svg> </a></li>
+                </svg> </a> 
+                    <ul class="sub_menu">
+                        <li class="sub_menu_item"> <a   class="sub_menu_link active" href="#"> NTF Details  </a>  </li>
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> All Author </a>  </li>                     
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> All Author 2 </a>  </li>                     
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Author Profile </a>  </li>                     
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Wallet Connect </a>  </li>                     
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> 404 </a>  </li>                     
+                        <li class="sub_menu_item"> <a   class="sub_menu_link" href="#"> Forgot Password </a>  </li>                     
+                    </ul>
+            </li>
             </ul>
         </div>
         <div class="header_actions">
@@ -160,36 +187,7 @@
 
     (function(){
    
-    // const dropdown_submenu = document.querySelector('[data-bs-toggle="dropdown_submenu"]')
-    // const subMenu = document.querySelector('.sub_menu')
-
-
-    // dropdown_submenu.addEventListener('click', e=>{
-
-     
-    //  dropdown_submenu.forEach( (button) => {
-    //     console.log(button)
-    //  })
-    //     forEach((dropdown_submenu)=>{
-    //     console.log(dropdown_submenu)
-    //  })
-
-    //     console.log(e)
-    //     subMenu.classList.toggle('show'); 
-    //     console.log('opacity 1 added ')
-    // })
-
-
-    //dropdown for 1st 
-    // const dropdown_submenu = document.querySelector('[data-bs-toggle="dropdown_submenu"]')
-    // const subMenu = document.querySelector('.sub_menu')
-
-    // dropdown_submenu.addEventListener('click', e=>{
-    //     console.log(e.target)
-    //     console.log('submenu click')
-    //     subMenu.classList.toggle('show'); 
-    //     console.log('opacity 1 added ')
-    // })
+  
 
     const headerMenuItem = document.querySelectorAll('[data-bs-toggle="dropdown_submenu"]');
     // const headerMenuItem = document.querySelectorAll('.header_menu-link');
@@ -198,12 +196,22 @@
 
         headerMenuItem.forEach(dropdownLink =>{
             
+            console.log(dropdownLink)
             dropdownLink.addEventListener('click', e=>{
-               const dropdownMenu =document.querySelector('.sub_menu');
+
+            //    const dropdownMenu =document.querySelector('.sub_menu');
+
+            const dropdownMenu =e.target.nextElementSibling;
             //    console.log(dropdownMenu);
                
             dropdownMenu.classList.toggle('show')
-            console.log(e.target)
+
+                console.log('clicked next ')
+            // console.log(e.target)
+
+                // dropdownMenu.addEventListener('click', e=>{
+
+                // });
 
 
                 
@@ -212,15 +220,7 @@
              
             })
         })
-        // dropdown.forEach(function(e){
-            
-        // })
 
-        // dropDown.forEach(function(dropDownItem){
-        //     dropDownItem.addEventListener('click', e=>{
-        //         console.log(e)
-        //     })
-        // } )
 
 
 
