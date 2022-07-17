@@ -1,0 +1,127 @@
+@import"color_variable";
+@import"fonts";
+.banner-section{
+    background-color: $theme_blue_dark;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    
+}
+.banner-wrapper {
+    padding-top: 152px;
+    padding-bottom: 90px;
+  }
+  .banner-content{
+    h1{
+        font-size: 3.75rem;
+        margin-bottom: 20px;
+        .theme-color{
+            color: $theme_color;
+        }
+    }
+    p{
+        font-size: 1.125rem;
+        font-weight: 500;
+        margin-bottom: 30px;
+        max-width: 500px;
+        font-family: $font_family_menu;
+    }
+    .banner-btn{
+        gap: 15px;
+        a{            
+        }
+        .default-btn{
+            text-decoration: none;
+            color:$theme_black;
+            padding: 0 1.7rem;
+            line-height: 40px;
+            border-radius: 99px;
+            font-size: 1rem;
+            transform-origin: right;
+            transition: all .3s ease;
+            background: $theme_color;
+            font-weight: bold;
+            overflow: hidden;
+            
+        }
+    }
+   
+  }
+
+  .nft-slider-wrapper{
+    .banner-item-slider-2{
+        .nft-item{
+            
+            position: relative;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+
+           
+            .nft-inner{
+                background-color: $theme_black;
+                border: 2px solid transparent;
+                border-image: $banner_border;
+                border-image-slice:1;
+                padding: 20px;
+
+                .nft-item-top{
+                    .author-wrapper{
+                        .author-menu{
+                            .am-li{
+                                list-style: none;
+                                .varified_mark{
+                                    display: block;
+                                    position: relative;
+                                    &::after{
+                                        position: absolute;
+                                        content: "\eed8";
+                                        font-family: "icoFont";                               
+                                        font-weight: 400;
+                                        color: #fff;
+                                        font-size: 12px;
+                                        right: 0;
+                                        bottom: 0;
+                                        width: 15px;
+                                        height: 15px;
+                                        border-radius: 50%;
+                                        background: #3d8fff;
+                                        text-align: center;
+                                        border: 1px solid #030010;
+                                        line-height: 1.1;
+
+                                    }
+                                    img{
+                                        border: 2px solid #030010;
+                                        border-radius: 50%;
+                                        max-width: 44px;
+                                        object-fit: cover;
+                                    }
+                                }
+                                h6{
+                                    margin-left: 10px;
+                                    a{
+                                        &:hover{
+                                            color: $theme_color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .more_warpper{
+                        .more_dropDown{
+                            a{
+                                transition: all .3s ease ;
+                                &:hover{
+                                    color: $theme_color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+
+  }
