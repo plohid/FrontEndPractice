@@ -1118,11 +1118,19 @@ h6 {
 .nft-slider-wrapper .banner-item-slider-2 .nft-item .nft-inner .nft-item-top .author-wrapper .author-menu .am-li h6 a:hover {
   color: #f3a735;
 }
-.nft-slider-wrapper .banner-item-slider-2 .nft-item .nft-inner .nft-item-top .more_warpper .more_dropDown a {
+.nft-slider-wrapper .banner-item-slider-2 .nft-item .nft-inner .nft-item-top .more_warpper .dropstart .dropdown-toggle[data-bs-toggle=dropdown]:before {
+  display: none;
+}
+.nft-slider-wrapper .banner-item-slider-2 .nft-item .nft-inner .nft-item-top .more_warpper .dropstart a {
   transition: all 0.3s ease;
 }
-.nft-slider-wrapper .banner-item-slider-2 .nft-item .nft-inner .nft-item-top .more_warpper .more_dropDown a:hover {
+.nft-slider-wrapper .banner-item-slider-2 .nft-item .nft-inner .nft-item-top .more_warpper .dropstart a:hover {
   color: #f3a735;
+}
+.nft-slider-wrapper .banner-item-slider-2 .nft-item .nft-inner .nft-item-top .more_warpper .dropstart .dropdown-menu {
+  min-width: 8rem;
+  background: #030010;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
 }
 
 /*# sourceMappingURL=custom.css.map */

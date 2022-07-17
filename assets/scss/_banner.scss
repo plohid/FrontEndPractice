@@ -109,12 +109,27 @@
                         }
                     }
                     .more_warpper{
-                        .more_dropDown{
+                        .dropstart{
+                            
+                            .dropdown-toggle{
+                                &[data-bs-toggle="dropdown"]{
+                                    &:before{
+                                        display: none;
+                                    }
+                                }
+                            }
                             a{
                                 transition: all .3s ease ;
                                 &:hover{
                                     color: $theme_color;
                                 }
+                            }
+                            .dropdown-menu{
+                                min-width: 8rem;
+                                background: #030010;
+                                box-shadow: 0 4px 5px rgb(0 0 0 / 40%);
+                                
+
                             }
                         }
                     }
