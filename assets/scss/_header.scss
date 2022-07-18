@@ -1,4 +1,14 @@
 @import"color_variable";
+
+
+.padding-top{
+    padding-top: 220px;
+}
+.padding-bottom{
+    padding-top: 220px;
+}
+
+
 //bootsrap setting remove
 dl,ol,ul,a,p {
     margin: 0;
@@ -347,10 +357,11 @@ h6 {
         align-items: center;
         height: 100%;
 
+
         .header_p_link {
             display: inline-flex;
             text-decoration: none;
-
+           
             &:hover {
                 color: $theme_color;
             }
@@ -372,6 +383,21 @@ h6 {
                     }
                 }
 
+            }
+        }
+
+        .dropdown-menu{
+            background-color: $user_bg;
+            li{
+                transition: all .3s ease;
+                .dropdown-item{
+                    color: $theme_white;
+                    &:hover{
+                        color: $theme_blue;
+                        background-color: transparent;
+                    }
+                }
+                
             }
         }
 

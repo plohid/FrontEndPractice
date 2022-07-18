@@ -10,7 +10,7 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet"  href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- icofont -->
     <link rel="stylesheet" href="assets/css/icofont.min.css">
 
@@ -108,10 +108,43 @@
             </div>
 
             <div class="header_profile">
-                <a class="header_p_link" href="#">
+                <!-- <a class="header_p_link" href="#">
                     <span > <i class="icofont-user"></i> </span>
-                    <span > Alex Joe </span>
-                </a>
+                    <span class="d-md-inline" > Alex Joe </span>
+                </a> -->
+
+
+                    <a class="header_p_link " href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" data-bs-offset="-100,10">
+                        <span><i class="icofont-user"></i></span> 
+                        <span class="d-none d-md-inline">Alex Joe</span>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="author.html"><span class="me-1"><i
+                                        class="icofont-options"></i></span>
+                                Profile</a></li>
+                        <li><a class="dropdown-item" href="activity.html"><span class="me-1"><i
+                                        class="icofont-lightning-ray"></i></span>
+                                Activity</a></li>
+                        <li><a class="dropdown-item" href="signup.html"><span class="me-1"><i
+                                        class="icofont-space-shuttle"></i></span>
+                                Sign
+                                Up</a></li>
+                        <li><a class="dropdown-item" href="signin.html"><span class="me-1"><i
+                                        class="icofont-login"></i></span> Sign
+                                In</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li><a class="dropdown-item" href="#"> Sign
+                                Out <span class="ms-1"><i class="icofont-logout"></i></span></a></li>
+                    </ul>
+
+
+                
+
             </div>
             <div class="walletBtn">
                 <a class="wallet_link" href="#">
@@ -131,10 +164,10 @@
 
 </header>
 
-<div class="banner-section" style="background-image: url(assets/img/banner/bg-4.jpg); ">
+<section class="banner-section" style="background-image: url(assets/img/banner/bg-4.jpg); ">
     <div class="container">
         <div class="banner-wrapper">
-            <div class="row ">
+            <div class="row align-items-center g-5">
                 <div class="col-lg-7">
                     <div class="banner-content">
                         <h1> <span class="theme-color">
@@ -143,7 +176,7 @@
                         <p>Digital Marketplace For Crypto Collectibles And Non-Fungible Tokens.
                             Buy, Sell, And Discover Exclusive Digital Assets.</p>
                         <div class="banner-btn d-flex flex-wrap">
-                            <a href="explore.html" class="default-btn move-top"><span>Explore</span> </a>
+                            <a  href="explore.html" class="default-btn move-top"><span>Explore</span> </a>
                             <a href="signin.html" class="default-btn move-right"><span>Create</span> </a>
                         </div>
                     </div>
@@ -151,42 +184,173 @@
                 <div class="col-lg-5">
                     <div class="nft-slider-wrapper">
                         <div class="swiper banner-item-slider-2">
-                            <div class="nft-item">   
-                                <div class="nft-inner">
-                                    <div class="nft-item-top d-flex justify-content-between align-items-center">
-                                        <div class="author-wrapper ">
-                                            <ul class="author-menu">
-                                                <li class="am-li d-flex align-items-center ">
-                                                    <a href="#" class="varified_mark">
-                                                        <img src="assets/img/author/01.png" alt="author img">
-                                                    </a>
-                                                    <h6><a href="author.html">rasselmrh</a></h6>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="more_warpper">
-                                            <div class="dropstart">                                               
-                                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="icofont-flikr"></i>
-                                                </a>
-                                            
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <li><a class="dropdown-item" href="#"> <span><i class="icofont-warning"></i></span> Report</a></li>
-                                                    <li><a class="dropdown-item" href="#"> <span><i class="icofont-reply"></i></span> Share</a></li>
+                            <div class="swiper-wrapper">
+
+                              <div class="swiper-slide">
+                                <div class="nft-item">   
+                                    <div class="nft-inner">
+                                        <div class="nft-item-top d-flex justify-content-between align-items-center">
+                                            <div class="author-wrapper ">
+                                                <ul class="author-menu">
+                                                    <li class="am-li d-flex align-items-center ">
+                                                        <a href="#" class="varified_mark">
+                                                            <img src="assets/img/author/01.png" alt="author img">
+                                                        </a>
+                                                        <h6><a href="author.html">rasselmrh</a></h6>
+                                                    </li>
                                                 </ul>
-
                                             </div>
-
-                        
-
-
-
-
-
+                                            <div class="more_warpper">
+                                                <div class="dropstart">                                               
+                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="icofont-flikr"></i>
+                                                    </a>                           
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <li><a class="dropdown-item" href="#"> <span><i class="icofont-warning"></i></span> Report</a></li>
+                                                        <li><a class="dropdown-item" href="#"> <span><i class="icofont-reply"></i></span> Share</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nft-item-bottom">
+                                            <div class="nft-item-thumb">
+                                                <img src="assets/img/banner/01.gif" alt="banner thumb">
+                                            </div>
+                                            <div class="nft-item-content">
+                                                <h4>Black Cat</h4>
+                                                <div class="price-react d-flex align-items-center justify-content-between">
+                                                    <p class="price">Price: <span>0.34 ETH</span></p>
+                                                    <a href="#" class="react"><i class="icofont-ui-love"></i> 230 </a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>         
+                                </div>   
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="nft-item">   
+                                    <div class="nft-inner">
+                                        <div class="nft-item-top d-flex justify-content-between align-items-center">
+                                            <div class="author-wrapper ">
+                                                <ul class="author-menu">
+                                                    <li class="am-li d-flex align-items-center ">
+                                                        <a href="#" class="varified_mark">
+                                                            <img src="assets/img/author/01.gif" alt="author img">
+                                                        </a>
+                                                        <h6><a href="author.html">Gucci Lucas </a></h6>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="more_warpper">
+                                                <div class="dropstart">                                               
+                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="icofont-flikr"></i>
+                                                    </a>                           
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <li><a class="dropdown-item" href="#"> <span><i class="icofont-warning"></i></span> Report</a></li>
+                                                        <li><a class="dropdown-item" href="#"> <span><i class="icofont-reply"></i></span> Share</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nft-item-bottom">
+                                            <div class="nft-item-thumb">
+                                                <img src="assets/img/banner/02.gif" alt="banner thumb">
+                                            </div>
+                                            <div class="nft-item-content">
+                                                <h4>EUPHORIA de</h4>
+                                                <div class="price-react d-flex align-items-center justify-content-between">
+                                                    <p class="price">Price: <span>0.34 ETH</span></p>
+                                                    <a href="#" class="react"><i class="icofont-ui-love"></i> 230 </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>   
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="nft-item">   
+                                    <div class="nft-inner">
+                                        <div class="nft-item-top d-flex justify-content-between align-items-center">
+                                            <div class="author-wrapper ">
+                                                <ul class="author-menu">
+                                                    <li class="am-li d-flex align-items-center ">
+                                                        <a href="#" class="varified_mark">
+                                                            <img src="assets/img/author/03.png" alt="author img">
+                                                        </a>
+                                                        <h6><a href="author.html">Imo35 ucas</a></h6>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="more_warpper">
+                                                <div class="dropstart">                                               
+                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="icofont-flikr"></i>
+                                                    </a>                           
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <li><a class="dropdown-item" href="#"> <span><i class="icofont-warning"></i></span> Report</a></li>
+                                                        <li><a class="dropdown-item" href="#"> <span><i class="icofont-reply"></i></span> Share</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nft-item-bottom">
+                                            <div class="nft-item-thumb">
+                                                <img src="assets/img/banner/05.jpg" alt="banner thumb">
+                                            </div>
+                                            <div class="nft-item-content">
+                                                <h4>Future Rocket</h4>
+                                                <div class="price-react d-flex align-items-center justify-content-between">
+                                                    <p class="price">Price: <span>0.34 ETH</span></p>
+                                                    <a href="#" class="react"><i class="icofont-ui-love"></i> 230 </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>   
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="nft-item">   
+                                    <div class="nft-inner">
+                                        <div class="nft-item-top d-flex justify-content-between align-items-center">
+                                            <div class="author-wrapper ">
+                                                <ul class="author-menu">
+                                                    <li class="am-li d-flex align-items-center ">
+                                                        <a href="#" class="varified_mark">
+                                                            <img src="assets/img/author/04.png" alt="author img">
+                                                        </a>
+                                                        <h6><a href="author.html">rasselmrh</a></h6>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="more_warpper">
+                                                <div class="dropstart">                                               
+                                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <i class="icofont-flikr"></i>
+                                                    </a>                           
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <li><a class="dropdown-item" href="#"> <span><i class="icofont-warning"></i></span> Report</a></li>
+                                                        <li><a class="dropdown-item" href="#"> <span><i class="icofont-reply"></i></span> Share</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="nft-item-bottom">
+                                            <div class="nft-item-thumb">
+                                                <img src="assets/img/banner/06.jpg" alt="banner thumb">
+                                            </div>
+                                            <div class="nft-item-content">
+                                                <h4>Black Cat</h4>
+                                                <div class="price-react d-flex align-items-center justify-content-between">
+                                                    <p class="price">Price: <span>0.34 ETH</span></p>
+                                                    <a href="#" class="react"><i class="icofont-ui-love"></i> 230 </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>   
+                              </div>
+                            </div>                 
                         </div>
                     </div>
                 </div>
@@ -194,9 +358,7 @@
 
         </div>
     </div> <!-- container end -->
-
-
-</div> <!-- banner end -->
+</section> <!-- banner end -->
 
 
 
@@ -206,6 +368,8 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+<!-- swiper js  -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
 <script>
@@ -263,94 +427,20 @@
     })
     })();
 
+  
    
-    //sub menu drop down 
 
-    // (function(){
-   
-    // // const dropdown_submenu = document.querySelector('[data-bs-toggle="dropdown_submenu"]')
-    // // const subMenu = document.querySelector('.sub_menu')
-
-
-    // // dropdown_submenu.addEventListener('click', e=>{
-
-     
-    // //  dropdown_submenu.forEach( (button) => {
-    // //     console.log(button)
-    // //  })
-    // //     forEach((dropdown_submenu)=>{
-    // //     console.log(dropdown_submenu)
-    // //  })
-
-    // //     console.log(e)
-    // //     subMenu.classList.toggle('show'); 
-    // //     console.log('opacity 1 added ')
-    // // })
-
-
-    // //dropdown for 1st 
-    // // const dropdown_submenu = document.querySelector('[data-bs-toggle="dropdown_submenu"]')
-    // // const subMenu = document.querySelector('.sub_menu')
-
-    // // dropdown_submenu.addEventListener('click', e=>{
-    // //     console.log(e.target)
-    // //     console.log('submenu click')
-    // //     subMenu.classList.toggle('show'); 
-    // //     console.log('opacity 1 added ')
-    // // })
-
-    // const headerMenuItem = document.querySelectorAll('[data-bs-toggle="dropdown_submenu"]');
-    // // const headerMenuItem = document.querySelectorAll('.header_menu-link');
-
-    //     // console.log(headerItem);
-
-    //     headerMenuItem.forEach(dropdownLink =>{
-            
-    //         dropdownLink.addEventListener('click', e=>{
-    //            const dropdownMenu =e.target.nextElementSibling ;
-    //         //    console.log(dropdownMenu);
-               
-    //         dropdownMenu.classList.toggle('show')
-    //         console.log(e.target)
-
-
-                
-            
-
-             
-    //         })
-    //     })
-    //     // dropdown.forEach(function(e){
-            
-    //     // })
-
-    //     // dropDown.forEach(function(dropDownItem){
-    //     //     dropDownItem.addEventListener('click', e=>{
-    //     //         console.log(e)
-    //     //     })
-    //     // } )
+    var swiper1 = new Swiper(".banner-item-slider-2", {
+        effect: "cards",
+        grabCursor: true,
+        autoplay: true,
+        loop: true,
+    });
 
 
 
-    // // Close the dropdown menu if the user clicks outside of it
-    // window.addEventListener('click', e=>{
-    //    if(!e.target.matches('[data-bs-toggle="dropdown_submenu"]')){
-    //     let dropDown = document.querySelector('.sub_menu');
-    //     var openDropDown = dropDown;
-    //     if(openDropDown.classList.contains('show')){
-    //             openDropDown.classList.remove('show'); 
-    //         }
-    //    }
 
-    // })
-
-
-    // })(); 
-
-
-
- 
-   
+  
         
     
 </script>
