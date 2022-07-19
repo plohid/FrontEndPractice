@@ -1076,7 +1076,6 @@ h6 {
 }
 .banner-content .banner-btn {
   gap: 15px;
-  color: #030010;
 }
 .banner-content .banner-btn .default-btn {
   position: relative;
@@ -1093,6 +1092,14 @@ h6 {
   background: #f3a735;
   font-weight: bold;
   overflow: hidden;
+}
+.banner-content .banner-btn .default-btn:last-child {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.banner-content .banner-btn .default-btn:hover {
+  transform: translateY(-3px);
 }
 .banner-content .banner-btn .default-btn.move-top:before {
   content: "";
@@ -1111,6 +1118,29 @@ h6 {
   transform: scaleY(1);
   transform-origin: bottom;
   transition: transform 0.5s;
+  z-index: -1;
+}
+.banner-content .banner-btn .default-btn.move-right:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transition: transform 0.5s;
+  transform-origin: top;
+  transform: scaleX(0);
+  z-index: 0;
+}
+.banner-content .banner-btn .default-btn.move-right:hover {
+  color: #030010;
+}
+.banner-content .banner-btn .default-btn.move-right:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+  z-index: -1;
 }
 
 .nft-slider-wrapper .banner-item-slider-2 .nft-item {
