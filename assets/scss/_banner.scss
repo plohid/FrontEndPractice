@@ -113,148 +113,149 @@
     }
    
   }
-  .nft-slider-wrapper{
-    .banner-item-slider-2{
-        .nft-item{
-            position: relative;
-            transition: all 0.3s ease;
-            margin-bottom: 30px;
-            &:hover{
-                transform: translateY(10px);
-                box-shadow: 0 3px 20px rgb(0 0 0 / 40%);
-            }
-            .nft-inner{
-                background-color: $theme_black;
-                border: 2px solid transparent;
-                border-image: $banner_border;
-                border-image-slice:1;
-                padding: 20px;
-                .nft-item-top{
-                    .author-wrapper{
-                        margin-bottom: 20px;
-                        .author-menu{
-                            .am-li{
-                                list-style: none;
-                                .varified_mark{
-                                    display: block;
-                                    position: relative;
-                                    &::after{
-                                        position: absolute;
-                                        content: "\eed8";
-                                        font-family: "icoFont";                               
-                                        font-weight: 400;
-                                        color: #fff;
-                                        font-size: 12px;
-                                        right: 0;
-                                        bottom: 0;
-                                        width: 15px;
-                                        height: 15px;
-                                        border-radius: 50%;
-                                        background: #3d8fff;
-                                        text-align: center;
-                                        border: 1px solid #030010;
-                                        line-height: 1.1;
 
-                                    }
-                                    img{
-                                        border: 2px solid #030010;
-                                        border-radius: 50%;
-                                        max-width: 44px;
-                                        object-fit: cover;
-                                    }
-                                }
-                                h6{
-                                    margin-left: 10px;
-                                    a{
-                                        &:hover{
-                                            color: $theme_color;
-                                        }
-                                    }
-                                }
+  .nft-item{
+    position: relative;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    &:hover{
+        transform: translateY(10px);
+        box-shadow: 0 3px 20px rgb(0 0 0 / 40%);
+    }
+    .nft-inner{
+        background-color: $theme_black;
+        border: 2px solid transparent;
+        border-image: $banner_border;
+        border-image-slice:1;
+        padding: 20px;
+        .nft-item-top{
+            .author-wrapper{
+                margin-bottom: 20px;
+                .author-menu{
+                    .am-li{
+                        list-style: none;
+                        .varified_mark{
+                            display: block;
+                            position: relative;
+                            &::after{
+                                position: absolute;
+                                content: "\eed8";
+                                font-family: "icoFont";                               
+                                font-weight: 400;
+                                color: #fff;
+                                font-size: 12px;
+                                right: 0;
+                                bottom: 0;
+                                width: 15px;
+                                height: 15px;
+                                border-radius: 50%;
+                                background: #3d8fff;
+                                text-align: center;
+                                border: 1px solid #030010;
+                                line-height: 1.1;
+
+                            }
+                            img{
+                                border: 2px solid #030010;
+                                border-radius: 50%;
+                                max-width: 44px;
+                                object-fit: cover;
                             }
                         }
-                    }
-                    .more_warpper{
-                        .dropstart{
-                            .dropdown-toggle{
-                                &[data-bs-toggle="dropdown"]{
-                                    &:before{
-                                        display: none;
-                                    }
-                                }
-                            }
+                        h6{
+                            margin-left: 10px;
                             a{
-                                i{
-                                    font-size: 18px;
-                                    transition: all 0.3s ease;
-                                }
-                                
-                                &.show{
-                                    i{
-                                        transform: rotate(-90deg);
-                                        color: $theme_blue;
-                                        display: inline-block;
-                                    }
-                                }
                                 &:hover{
                                     color: $theme_color;
                                 }
                             }
-                            .dropdown-menu{
-                                position: absolute;
-                                min-width: 8rem;
-                                background: $theme_blue_dark;
-                                box-shadow: 0 4px 5px rgb(0 0 0 / 40%);
-                               li{
-                                    border-bottom: 1px solid$light_white;
-                                    &:last-child{
-                                        border: none;
-                                    }
-                                a{
-                                    color: $theme_white;
-                                    &:hover{
-                                        color: $theme_blue;
-                                        background-color: transparent;
-                                    }
-                                }
-                               }
-                            }
                         }
                     }
                 }
-                .nft-item-bottom{
-                    .nft-item-thumb{
-                        margin-bottom: 20px;
-                        img{}
-                    }
-                    .nft-item-content{
-                        h4{
-                            font-size: 1.5rem;
-                            transition: all .3s ease;
-                            &:hover{
-                                color: $theme_color;
+            }
+            .more_warpper{
+                .dropstart{
+                    .dropdown-toggle{
+                        &[data-bs-toggle="dropdown"]{
+                            &:before{
+                                display: none;
                             }
                         }
-                        .price-react{
-                            .price{
-                                font-size: 1.125rem;
-                                font-family: $font_family_menu;
-                                span{
-                                    color: $theme_royal_green;
-                                }
+                    }
+                    a{
+                        i{
+                            font-size: 18px;
+                            transition: all 0.3s ease;
+                        }
+                       
+                        
+                        &.show{
+                            i{
+                                transform: rotate(-90deg);
+                                color: $theme_blue;
+                                display: inline-block;
                             }
-                            .react{
-                                font-size: 1.25rem;
-                                font-family: $font_family_menu;
-                                &:hover{
-                                    color: $theme_blue;
-                                }
+                            &:focus-visible{
+                                outline: none;
                             }
+                        }
+                        &:hover{
+                            color: $theme_color;
+                        }
+                    }
+                    .dropdown-menu{
+                        position: absolute;
+                        min-width: 8rem;
+                        background: $theme_blue_dark;
+                        box-shadow: 0 4px 5px rgb(0 0 0 / 40%);
+                       li{
+                            border-bottom: 1px solid$light_white;
+                            &:last-child{
+                                border: none;
+                            }
+                        a{
+                            color: $theme_white;
+                            &:hover{
+                                color: $theme_blue;
+                                background-color: transparent;
+                            }
+                        }
+                       }
+                    }
+                }
+            }
+        }
+        .nft-item-bottom{
+            .nft-item-thumb{
+                margin-bottom: 20px;
+                img{}
+            }
+            .nft-item-content{
+                h4{
+                    font-size: 1.5rem;
+                    transition: all .3s ease;
+                    &:hover{
+                        color: $theme_color;
+                    }
+                }
+                .price-react{
+                    .price{
+                        font-size: 1.125rem;
+                        font-family: $font_family_menu;
+                        span{
+                            color: $theme_royal_green;
+                        }
+                    }
+                    .react{
+                        font-size: 1.25rem;
+                        font-family: $font_family_menu;
+                        &:hover{
+                            color: $theme_blue;
                         }
                     }
                 }
             }
         }
     }
+}
 
-  }
