@@ -1195,7 +1195,7 @@ h6 {
   border-image-slice: 1;
   padding: 20px;
 }
-.nft-item .nft-inner .nft-item-top .author-wrapper {
+.nft-item .nft-inner .nft-item-top {
   margin-bottom: 20px;
 }
 .nft-item .nft-inner .nft-item-top .author-wrapper .author-menu .am-li {
@@ -1367,6 +1367,25 @@ h6 {
 
 .auction-section {
   background-color: #000;
+}
+.auction-section .auction-wrapper {
+  padding-top: 59px;
+}
+.auction-section .nft-item .nft-inner .nft-item-top .author-wrapper .author-menu {
+  position: relative;
+}
+.auction-section .nft-item .nft-inner .nft-item-top .author-wrapper .author-menu li {
+  margin-left: -20px;
+  padding: 0;
+}
+.auction-section .nft-item .nft-inner .nft-item-top .author-wrapper .author-menu li .varified_mark::after {
+  display: none;
+}
+.auction-section .nft-item .nft-inner .nft-item-top .author-wrapper .author-menu li:nth-child(1) {
+  margin-left: 0;
+}
+.auction-section .nft-item .nft-inner .nft-item-top .author-wrapper .author-menu li:nth-last-child(1) .varified_mark::after {
+  display: block;
 }
 
 /*# sourceMappingURL=custom.css.map */

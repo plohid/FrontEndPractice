@@ -1,3 +1,39 @@
 .auction-section{
     background-color: $theme_black;
+    .auction-wrapper{
+        padding-top: 59px;
+    }
+    .nft-item{
+        .nft-inner{
+            .nft-item-top{
+                
+                .author-wrapper{
+                    .author-menu{
+                        position: relative;
+                        li{
+                            margin-left:-20px;
+                            padding: 0;
+                            .varified_mark{
+                                &::after{
+                                    display: none;
+                                }
+                            }
+                            &:nth-child(1){
+                                margin-left: 0;
+                               
+                            }
+                            &:nth-last-child(1){
+                                .varified_mark{
+                                    &::after{
+                                        display: block;
+                                    }
+                                }
+                               
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
