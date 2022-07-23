@@ -1340,6 +1340,7 @@ h6 {
 }
 .wallet-section .wallet-inner {
   padding-top: 60px;
+  margin-bottom: -105px;
 }
 .wallet-section .wallet-inner .wallet-item {
   background-color: #000;
@@ -1365,6 +1366,10 @@ h6 {
   color: #5138ee;
 }
 
+@font-face {
+  font-family: Barlow;
+  src: url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+}
 .auction-section {
   background-color: #000;
 }
@@ -1386,6 +1391,42 @@ h6 {
 }
 .auction-section .nft-item .nft-inner .nft-item-top .author-wrapper .author-menu li:nth-last-child(1) .varified_mark::after {
   display: block;
+}
+.auction-section .nft-item .nft-inner .nft-item-bottom .nft-item-thumb {
+  position: relative;
+}
+.auction-section .nft-item .nft-inner .nft-item-bottom .nft-item-thumb .ntf-countdown {
+  position: absolute;
+  list-style: none;
+  gap: 15px;
+  height: 49px;
+  background: #5138ee;
+  border-radius: 30px;
+  bottom: 5px;
+  width: 92%;
+  margin-left: 10px;
+}
+.auction-section .nft-item .nft-inner .nft-item-bottom .nft-item-thumb .ntf-countdown li {
+  color: #fff;
+}
+.auction-section .nft-item .nft-inner .nft-item-bottom .nft-item-thumb .ntf-countdown li span {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: Barlow;
+  src: url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
+}
+.category-section .category-wrapper {
+  margin-top: 57px;
+}
+.category-section .nft-item .nft-inner .nft-cat-thumb-wrapper .nft-th-list .nft-thumb-single img {
+  border-radius: 5px;
+}
+.category-section .nft-item .nft-inner .nft-item-content {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=custom.css.map */

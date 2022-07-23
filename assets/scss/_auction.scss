@@ -1,3 +1,5 @@
+@import"fonts";
+
 .auction-section{
     background-color: $theme_black;
     .auction-wrapper{
@@ -29,6 +31,31 @@
                                     }
                                 }
                                
+                            }
+                        }
+                    }
+                }
+            }
+            .nft-item-bottom{
+                .nft-item-thumb{
+                    position: relative;
+                    .ntf-countdown{
+                        position: absolute;
+                        list-style: none;
+                        gap: 15px;
+                        height: 49px;
+                        background: $theme_blue;
+                        border-radius: 30px;
+                        bottom: 5px;
+                        width: 92%;
+                        margin-left: 10px;
+                        
+                        li{
+                            color: $theme_white;
+                            span{
+                                font-family:$font_family_menu;
+                                font-weight: 500;
+                                font-size: 16px;
                             }
                         }
                     }

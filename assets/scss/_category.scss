@@ -1,0 +1,27 @@
+@import"color_variable";
+@import"fonts";
+
+.category-section{
+    .category-wrapper{
+        margin-top: 57px;
+        .category-slider{
+
+        }
+    }
+    .nft-item{
+        .nft-inner{
+            .nft-cat-thumb-wrapper{
+                .nft-th-list{
+                    .nft-thumb-single{
+                        img{
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+            .nft-item-content{
+                margin-top: 20px;
+            }
+        }
+    }
+}
