@@ -1,0 +1,67 @@
+@import"color_variable";
+
+.seller-section{
+    background-color: $theme_black;
+    .seller-wrapper{
+        padding-top: 60px;
+    }
+    .nft-item{
+        
+        .nft-inner{
+            .nft-thumb{
+                img{
+                    width: 100%;
+                }
+            }
+            .nft-item-content{
+                .author-wrapper{
+                    transform: translate(20px, -50%);
+                    .author-menu{
+                        .varified_mark{
+                                display: block;
+                                position: relative;
+                                &::after{
+                                    position: absolute;
+                                    content: "\eed8";
+                                    font-family: "icoFont";                               
+                                    font-weight: 400;
+                                    color: #fff;
+                                    font-size: 12px;
+                                    right: 0;
+                                    bottom: 0;
+                                    width: 15px;
+                                    height: 15px;
+                                    border-radius: 50%;
+                                    background: #3d8fff;
+                                    text-align: center;
+                                    border: 1px solid #030010;
+                                    line-height: 1.1;
+    
+                                }
+                                img{
+                                    border: 2px solid #030010;
+                                    border-radius: 50%;
+                                    max-width: 65px;
+                                    object-fit: cover;
+                                }
+                          
+                        }
+                    }
+                }
+                .author-details{
+                    margin-left: 20px;
+                    .aut-number{
+                       
+                    }
+                    .aut-info{
+                        margin-left: 15px;
+                        .aut-name{}
+                        .aut-price{
+                            color: $theme_royal_green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

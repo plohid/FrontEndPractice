@@ -1,0 +1,64 @@
+.ex-drop-section{
+    background-color: $theme_black;
+    .ex-drop-wrapper{
+        padding-top: 59px;
+    }
+    .nft-item{
+        .nft-inner{
+            .nft-item-top{
+                
+                .author-wrapper{
+                    .author-menu{
+                        position: relative;
+                        li{
+                            margin-left:-20px;
+                            padding: 0;
+                            .varified_mark{
+                                &::after{
+                                    display: none;
+                                }
+                            }
+                            &:nth-child(1){
+                                margin-left: 0;
+                               
+                            }
+                            &:nth-last-child(1){
+                                .varified_mark{
+                                    &::after{
+                                        display: block;
+                                    }
+                                }
+                               
+                            }
+                        }
+                    }
+                }
+            }
+            .nft-item-bottom{
+                .nft-item-thumb{
+                    position: relative;
+                    .ntf-countdown{
+                        position: absolute;
+                        list-style: none;
+                        gap: 15px;
+                        height: 49px;
+                        background: $theme_blue;
+                        border-radius: 30px;
+                        bottom: 5px;
+                        width: 92%;
+                        margin-left: 10px;
+                        
+                        li{
+                            color: $theme_white;
+                            span{
+                                font-family:$font_family_menu;
+                                font-weight: 500;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.blog-section{
+    background-color: $theme-black;
+    .blog-wrapper{
+        padding-top: 58px;
+    }
+
+    .nft-item{
+        .nft-inner{
+            .nft-item-thumb{
+                margin-bottom: 30px;
+            }
+            .nft-item-content{
+                h4{
+                    a{
+                        &:hover{
+                            color: $theme_color;
+                        }
+                    }
+                }
+                .blog-info{
+                    margin-top: 16px;
+                    p{
+                        font-size: 14px;
+                        span{
+                            margin-right: 4px;
+                            color: $theme_blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -34,24 +34,6 @@
   border-image-slice: 1;
 }
 
-.padding-top {
-  padding-top: 120px;
-}
-
-.padding-bottom {
-  padding-bottom: 220px;
-}
-
-dl, ol, ul, a, p {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 @font-face {
   font-family: Barlow;
   src: url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
@@ -67,32 +49,6 @@ body {
   line-height: 1.5;
   color: #fff;
   box-sizing: border-box;
-}
-
-a {
-  color: #fff;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #fff;
-  font-family: "Barlow", sans-serif;
-  font-weight: 700;
-  line-height: 1.2;
-  padding: 0;
-  margin: 0;
-}
-
-.main-body {
-  background-color: #030010;
 }
 
 .header {
@@ -1080,6 +1036,178 @@ h6 {
     right: -18px;
   }
 }
+dl, ol, ul, a, p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.padding-top {
+  padding-top: 120px;
+}
+
+.padding-bottom {
+  padding-bottom: 220px;
+}
+
+a {
+  color: #fff;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+a:hover {
+  color: #f3a735;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
+}
+
+.main-body {
+  background-color: #000;
+}
+
+.nft-item {
+  position: relative;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+.nft-item:hover {
+  transform: translateY(10px);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+}
+.nft-item .nft-inner {
+  background-color: #000;
+  border: 2px solid transparent;
+  border-image: linear-gradient(125deg, #FFE53B 0%, #FF2525 37%, #fd00ff 100%);
+  border-image-slice: 1;
+  padding: 20px;
+}
+.nft-item .nft-inner .nft-item-top {
+  margin-bottom: 20px;
+}
+.nft-item .nft-inner .nft-item-top .author-wrapper .author-menu .am-li {
+  list-style: none;
+}
+.nft-item .nft-inner .nft-item-top .author-wrapper .author-menu .am-li:nth-child(3) h6 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.nft-item .nft-inner .nft-item-top .author-wrapper .author-menu .am-li .varified_mark {
+  display: block;
+  position: relative;
+}
+.nft-item .nft-inner .nft-item-top .author-wrapper .author-menu .am-li .varified_mark::after {
+  position: absolute;
+  content: "\eed8";
+  font-family: "icoFont";
+  font-weight: 400;
+  color: #fff;
+  font-size: 12px;
+  right: 0;
+  bottom: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #3d8fff;
+  text-align: center;
+  border: 1px solid #030010;
+  line-height: 1.1;
+}
+.nft-item .nft-inner .nft-item-top .author-wrapper .author-menu .am-li .varified_mark img {
+  border: 2px solid #030010;
+  border-radius: 50%;
+  max-width: 44px;
+  object-fit: cover;
+}
+.nft-item .nft-inner .nft-item-top .author-wrapper .author-menu .am-li h6 {
+  margin-left: 10px;
+}
+.nft-item .nft-inner .nft-item-top .author-wrapper .author-menu .am-li h6 a:hover {
+  color: #f3a735;
+}
+.nft-item .nft-inner .nft-item-top .more_warpper .dropstart .dropdown-toggle[data-bs-toggle=dropdown]:before {
+  display: none;
+}
+.nft-item .nft-inner .nft-item-top .more_warpper .dropstart a i {
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+.nft-item .nft-inner .nft-item-top .more_warpper .dropstart a.show i {
+  transform: rotate(-90deg);
+  color: #5138ee;
+  display: inline-block;
+}
+.nft-item .nft-inner .nft-item-top .more_warpper .dropstart a.show:focus-visible {
+  outline: none;
+}
+.nft-item .nft-inner .nft-item-top .more_warpper .dropstart a:hover {
+  color: #f3a735;
+}
+.nft-item .nft-inner .nft-item-top .more_warpper .dropstart .dropdown-menu {
+  position: absolute;
+  min-width: 8rem;
+  background: #030010;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+}
+.nft-item .nft-inner .nft-item-top .more_warpper .dropstart .dropdown-menu li {
+  border-bottom: 1px solid #ffffff66;
+}
+.nft-item .nft-inner .nft-item-top .more_warpper .dropstart .dropdown-menu li:last-child {
+  border: none;
+}
+.nft-item .nft-inner .nft-item-top .more_warpper .dropstart .dropdown-menu li a {
+  color: #fff;
+}
+.nft-item .nft-inner .nft-item-top .more_warpper .dropstart .dropdown-menu li a:hover {
+  color: #5138ee;
+  background-color: transparent;
+}
+.nft-item .nft-inner .nft-item-bottom .nft-item-thumb {
+  margin-bottom: 20px;
+}
+.nft-item .nft-inner .nft-item-bottom .nft-item-content h4 {
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+.nft-item .nft-inner .nft-item-bottom .nft-item-content h4:hover {
+  color: #f3a735;
+}
+.nft-item .nft-inner .nft-item-bottom .nft-item-content .price-react .price {
+  font-size: 1.125rem;
+  font-family: "Barlow", sans-serif;
+}
+.nft-item .nft-inner .nft-item-bottom .nft-item-content .price-react .price span {
+  color: #00edc5;
+}
+.nft-item .nft-inner .nft-item-bottom .nft-item-content .price-react .react {
+  font-size: 1.25rem;
+  font-family: "Barlow", sans-serif;
+}
+.nft-item .nft-inner .nft-item-bottom .nft-item-content .price-react .react:hover {
+  color: #5138ee;
+}
+
 @font-face {
   font-family: Barlow;
   src: url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
@@ -1177,123 +1305,6 @@ h6 {
   transform-origin: left;
   transition: transform 0.5s;
   z-index: -1;
-}
-
-.nft-item {
-  position: relative;
-  transition: all 0.3s ease;
-  margin-bottom: 30px;
-}
-.nft-item:hover {
-  transform: translateY(10px);
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
-}
-.nft-item .nft-inner {
-  background-color: #000;
-  border: 2px solid transparent;
-  border-image: linear-gradient(125deg, #FFE53B 0%, #FF2525 37%, #fd00ff 100%);
-  border-image-slice: 1;
-  padding: 20px;
-}
-.nft-item .nft-inner .nft-item-top {
-  margin-bottom: 20px;
-}
-.nft-item .nft-inner .nft-item-top .author-wrapper .author-menu .am-li {
-  list-style: none;
-}
-.nft-item .nft-inner .nft-item-top .author-wrapper .author-menu .am-li .varified_mark {
-  display: block;
-  position: relative;
-}
-.nft-item .nft-inner .nft-item-top .author-wrapper .author-menu .am-li .varified_mark::after {
-  position: absolute;
-  content: "\eed8";
-  font-family: "icoFont";
-  font-weight: 400;
-  color: #fff;
-  font-size: 12px;
-  right: 0;
-  bottom: 0;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: #3d8fff;
-  text-align: center;
-  border: 1px solid #030010;
-  line-height: 1.1;
-}
-.nft-item .nft-inner .nft-item-top .author-wrapper .author-menu .am-li .varified_mark img {
-  border: 2px solid #030010;
-  border-radius: 50%;
-  max-width: 44px;
-  object-fit: cover;
-}
-.nft-item .nft-inner .nft-item-top .author-wrapper .author-menu .am-li h6 {
-  margin-left: 10px;
-}
-.nft-item .nft-inner .nft-item-top .author-wrapper .author-menu .am-li h6 a:hover {
-  color: #f3a735;
-}
-.nft-item .nft-inner .nft-item-top .more_warpper .dropstart .dropdown-toggle[data-bs-toggle=dropdown]:before {
-  display: none;
-}
-.nft-item .nft-inner .nft-item-top .more_warpper .dropstart a i {
-  font-size: 18px;
-  transition: all 0.3s ease;
-}
-.nft-item .nft-inner .nft-item-top .more_warpper .dropstart a.show i {
-  transform: rotate(-90deg);
-  color: #5138ee;
-  display: inline-block;
-}
-.nft-item .nft-inner .nft-item-top .more_warpper .dropstart a.show:focus-visible {
-  outline: none;
-}
-.nft-item .nft-inner .nft-item-top .more_warpper .dropstart a:hover {
-  color: #f3a735;
-}
-.nft-item .nft-inner .nft-item-top .more_warpper .dropstart .dropdown-menu {
-  position: absolute;
-  min-width: 8rem;
-  background: #030010;
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
-}
-.nft-item .nft-inner .nft-item-top .more_warpper .dropstart .dropdown-menu li {
-  border-bottom: 1px solid #ffffff66;
-}
-.nft-item .nft-inner .nft-item-top .more_warpper .dropstart .dropdown-menu li:last-child {
-  border: none;
-}
-.nft-item .nft-inner .nft-item-top .more_warpper .dropstart .dropdown-menu li a {
-  color: #fff;
-}
-.nft-item .nft-inner .nft-item-top .more_warpper .dropstart .dropdown-menu li a:hover {
-  color: #5138ee;
-  background-color: transparent;
-}
-.nft-item .nft-inner .nft-item-bottom .nft-item-thumb {
-  margin-bottom: 20px;
-}
-.nft-item .nft-inner .nft-item-bottom .nft-item-content h4 {
-  font-size: 1.5rem;
-  transition: all 0.3s ease;
-}
-.nft-item .nft-inner .nft-item-bottom .nft-item-content h4:hover {
-  color: #f3a735;
-}
-.nft-item .nft-inner .nft-item-bottom .nft-item-content .price-react .price {
-  font-size: 1.125rem;
-  font-family: "Barlow", sans-serif;
-}
-.nft-item .nft-inner .nft-item-bottom .nft-item-content .price-react .price span {
-  color: #00edc5;
-}
-.nft-item .nft-inner .nft-item-bottom .nft-item-content .price-react .react {
-  font-size: 1.25rem;
-  font-family: "Barlow", sans-serif;
-}
-.nft-item .nft-inner .nft-item-bottom .nft-item-content .price-react .react:hover {
-  color: #5138ee;
 }
 
 @font-face {
@@ -1419,6 +1430,9 @@ h6 {
   font-family: Barlow;
   src: url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap");
 }
+.category-section {
+  background-color: #000;
+}
 .category-section .category-wrapper {
   margin-top: 57px;
 }
@@ -1427,6 +1441,232 @@ h6 {
 }
 .category-section .nft-item .nft-inner .nft-item-content {
   margin-top: 20px;
+}
+
+.seller-section {
+  background-color: #000;
+}
+.seller-section .seller-wrapper {
+  padding-top: 60px;
+}
+.seller-section .nft-item .nft-inner .nft-thumb img {
+  width: 100%;
+}
+.seller-section .nft-item .nft-inner .nft-item-content .author-wrapper {
+  transform: translate(20px, -50%);
+}
+.seller-section .nft-item .nft-inner .nft-item-content .author-wrapper .author-menu .varified_mark {
+  display: block;
+  position: relative;
+}
+.seller-section .nft-item .nft-inner .nft-item-content .author-wrapper .author-menu .varified_mark::after {
+  position: absolute;
+  content: "\eed8";
+  font-family: "icoFont";
+  font-weight: 400;
+  color: #fff;
+  font-size: 12px;
+  right: 0;
+  bottom: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #3d8fff;
+  text-align: center;
+  border: 1px solid #030010;
+  line-height: 1.1;
+}
+.seller-section .nft-item .nft-inner .nft-item-content .author-wrapper .author-menu .varified_mark img {
+  border: 2px solid #030010;
+  border-radius: 50%;
+  max-width: 65px;
+  object-fit: cover;
+}
+.seller-section .nft-item .nft-inner .nft-item-content .author-details {
+  margin-left: 20px;
+}
+.seller-section .nft-item .nft-inner .nft-item-content .author-details .aut-info {
+  margin-left: 15px;
+}
+.seller-section .nft-item .nft-inner .nft-item-content .author-details .aut-info .aut-price {
+  color: #00edc5;
+}
+
+.ex-drop-section {
+  background-color: #000;
+}
+.ex-drop-section .ex-drop-wrapper {
+  padding-top: 59px;
+}
+.ex-drop-section .nft-item .nft-inner .nft-item-top .author-wrapper .author-menu {
+  position: relative;
+}
+.ex-drop-section .nft-item .nft-inner .nft-item-top .author-wrapper .author-menu li {
+  margin-left: -20px;
+  padding: 0;
+}
+.ex-drop-section .nft-item .nft-inner .nft-item-top .author-wrapper .author-menu li .varified_mark::after {
+  display: none;
+}
+.ex-drop-section .nft-item .nft-inner .nft-item-top .author-wrapper .author-menu li:nth-child(1) {
+  margin-left: 0;
+}
+.ex-drop-section .nft-item .nft-inner .nft-item-top .author-wrapper .author-menu li:nth-last-child(1) .varified_mark::after {
+  display: block;
+}
+.ex-drop-section .nft-item .nft-inner .nft-item-bottom .nft-item-thumb {
+  position: relative;
+}
+.ex-drop-section .nft-item .nft-inner .nft-item-bottom .nft-item-thumb .ntf-countdown {
+  position: absolute;
+  list-style: none;
+  gap: 15px;
+  height: 49px;
+  background: #5138ee;
+  border-radius: 30px;
+  bottom: 5px;
+  width: 92%;
+  margin-left: 10px;
+}
+.ex-drop-section .nft-item .nft-inner .nft-item-bottom .nft-item-thumb .ntf-countdown li {
+  color: #fff;
+}
+.ex-drop-section .nft-item .nft-inner .nft-item-bottom .nft-item-thumb .ntf-countdown li span {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.blog-section {
+  background-color: #000;
+}
+.blog-section .blog-wrapper {
+  padding-top: 58px;
+}
+.blog-section .nft-item .nft-inner .nft-item-thumb {
+  margin-bottom: 30px;
+}
+.blog-section .nft-item .nft-inner .nft-item-content h4 a:hover {
+  color: #f3a735;
+}
+.blog-section .nft-item .nft-inner .nft-item-content .blog-info {
+  margin-top: 16px;
+}
+.blog-section .nft-item .nft-inner .nft-item-content .blog-info p {
+  font-size: 14px;
+}
+.blog-section .nft-item .nft-inner .nft-item-content .blog-info p span {
+  margin-right: 4px;
+  color: #5138ee;
+}
+
+.footer-section .footer-top {
+  background-image: url(../img/footer/bg-4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-section .footer-top .padding-top {
+  padding-top: 85px;
+}
+
+.footer-newsletter {
+  padding-block: 60px;
+  border-bottom: 1px solid #ffffff1a;
+}
+.footer-newsletter .newsletter-content .fheader {
+  margin-bottom: 30px;
+}
+.footer-newsletter .newsletter-content form {
+  position: relative;
+}
+.footer-newsletter .newsletter-content form input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.15);
+  height: 60px;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 2px;
+  width: 100%;
+}
+.footer-newsletter .newsletter-content form input::placeholder {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.footer-newsletter .newsletter-content form button {
+  position: absolute;
+  right: 5px;
+  content: "";
+  top: 50%;
+  height: 50px;
+  transform: translateY(-50%);
+  background-color: #f3a735;
+  color: #000;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-weight: 700;
+  padding-inline: 1.5rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.footer-newsletter .social-content .fheader {
+  margin-bottom: 30px;
+}
+.footer-newsletter .social-content .social-menu {
+  gap: 20px;
+}
+.footer-newsletter .social-content .social-menu li {
+  list-style: none;
+}
+.footer-newsletter .social-content .social-menu li a {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #f3a735;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #000;
+  transition: all 0.5s ease;
+}
+.footer-newsletter .social-content .social-menu li a:hover {
+  background-color: #e7900e;
+  border-radius: 100px;
+}
+
+.footer-links {
+  padding-bottom: 108px;
+}
+.footer-links .footer-link-item h5 {
+  margin-bottom: 20px;
+}
+.footer-links .footer-link-item .footer-link-menu {
+  list-style: none;
+}
+.footer-links .footer-link-item .footer-link-menu li {
+  padding-block: 5px;
+  position: relative;
+}
+.footer-links .footer-link-item .footer-link-menu li a {
+  padding-left: 20px;
+}
+.footer-links .footer-link-item .footer-link-menu li::after {
+  position: absolute;
+  content: "";
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #f3a735;
+  left: 0;
+  transform: translateY(-50%);
+  top: 50%;
 }
 
 /*# sourceMappingURL=custom.css.map */
